@@ -5,7 +5,8 @@
       "Type": "AWS::Lambda::Function",
       "Properties": {
         "Code": {
-          "ZipFile": "Hello"
+          "S3Bucket": "my-test-code-bucket1",
+          "S3Key": "SampleApp.zip"
         },
         "Runtime": "nodejs18.x",
         "Handler": "index.mjs",
