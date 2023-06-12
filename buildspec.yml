@@ -2,6 +2,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo we're building
+      - echo "hello"
+      - echo "we're building"
       - ls
-      - echo after ls
+      - echo "after ls"
