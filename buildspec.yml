@@ -6,3 +6,5 @@ phases:
       - echo "we're building"
       - ls
       - echo "after ls"
+      - zip -r lambda.zip lambda
+      - s3 cp lambda.zip s3://my-test-code-bucket1/
