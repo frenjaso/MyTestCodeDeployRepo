@@ -1,0 +1,21 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "MyMainLambdaFuntion": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "ZipFile": "Hello"
+        },
+        "Runtime": "nodejs18.x",
+        "Handler": "index.mjs",
+        "Role": "arn:aws:iam::601766089601:role/MyLambdaAdminRole"
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "f29e3cb7-97a3-4086-92f3-1ce6c0276f36"
+        }
+      }
+    }
+  }
+}
