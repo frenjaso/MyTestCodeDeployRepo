@@ -6,7 +6,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "my-test-code-bucket1",
-          "S3Key": "SampleApp.zip"
+          "S3Key": "lambda.zip"
         },
         "Runtime": "nodejs18.x",
         "Handler": "index.mjs",
