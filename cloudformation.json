@@ -9,7 +9,7 @@
           "S3Key": "lambda.zip"
         },
         "Runtime": "nodejs18.x",
-        "Handler": "index.mjs",
+        "Handler": "lambda/index.mjs",
         "Role": "arn:aws:iam::601766089601:role/MyLambdaAdminRole"
       },
       "Metadata": {
