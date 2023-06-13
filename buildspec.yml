@@ -12,4 +12,5 @@ phases:
       - echo "{'foo':'bar'}" > myJson.json
 artifacts:
   files:
-    builds/$CODEBUILD_BUILD_NUMBER/myJson.json
+    - 'myJson.json'
+  name: builds/$CODEBUILD_BUILD_NUMBER/myJson.json
