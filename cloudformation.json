@@ -10,7 +10,8 @@
         },
         "Runtime": "nodejs18.x",
         "Handler": "lambda/index.handler",
-        "Role": "arn:aws:iam::601766089601:role/MyLambdaAdminRole"
+        "Role": "arn:aws:iam::601766089601:role/MyLambdaAdminRole",
+        "FunctionName": "MyMainLambdaFuntion"
       },
       "Metadata": {
         "AWS::CloudFormation::Designer": {
