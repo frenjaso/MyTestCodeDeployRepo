@@ -12,5 +12,4 @@ phases:
       - echo "{'foo':'bar'}" > myJson.json
 artifacts:
   files:
-    - 'myJson.json'
-  name: builds/$CODEBUILD_BUILD_NUMBER/myJson.json
+    - 'lambda.zip'
