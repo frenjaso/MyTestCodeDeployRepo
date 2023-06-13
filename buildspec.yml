@@ -8,3 +8,8 @@ phases:
       - echo "after ls"
       - zip -r lambda.zip lambda
       - aws s3 cp --debug "lambda.zip" "s3://my-test-code-bucket1/"
+      - touch myJson.json
+      - echo "{'foo':'bar'}" > myJson.json
+  artifacts:
+    files:
+      builds/$CODEBUILD_BUILD_NUMBER/myJson.json
