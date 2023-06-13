@@ -9,7 +9,7 @@ phases:
       - zip -r lambda.zip lambda
       - aws s3 cp --debug "lambda.zip" "s3://my-test-code-bucket1/$CODEBUILD_BUILD_NUMBER/"
       - touch myJson.json
-      - echo "{'fileName':'$CODEBUILD_BUILD_NUMBER/lambda.zip'}" > myJson.json
+      - echo '{"fileName":"$CODEBUILD_BUILD_NUMBER/lambda.zip"}' > myJson.json
 artifacts:
   files:
     - 'myJson.json'
