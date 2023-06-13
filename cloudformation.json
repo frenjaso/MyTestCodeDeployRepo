@@ -11,7 +11,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "my-test-code-bucket1",
-          "S3Key": { "Fn::GetParam" : [ "testArtifact", "myJson.json", "fileName" ] }
+          "S3Key": { "Ref" : "LambdaFunctionKey" }
         },
         "Runtime": "nodejs18.x",
         "Handler": "lambda/index.handler",
